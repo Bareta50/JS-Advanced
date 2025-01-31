@@ -1,0 +1,22 @@
+html {
+  /* background-image: url("../Workshop/img/Star-wars-logo-new-tall.webp"); */
+  /* background-repeat: no-repeat; */
+  background-color: #1c1c1c;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+img {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+  color: yellow;
+}

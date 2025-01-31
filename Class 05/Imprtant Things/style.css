@@ -1,0 +1,26 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  text-align: center;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+#ADFU {
+  width: 300px;
+}
+.overflowHidden {
+  border: 3px dotted yellow;
+  color: green;
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+}

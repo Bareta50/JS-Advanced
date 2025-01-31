@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions Advanced</title>
+  </head>
+  <body>
+    <h1><span class="red" id="Text">Notice!</span> Important things ahead!!</h1>
+    <div id="ADFU">
+      <h3 class="yellow">Advanced Functions ---&gt;:</h3>
+      <p>Strict Functions</p>
+      <div class="overflowHidden">
+        <p>
+          "use strict"<br />; // delete variables<br />
+          let person = {<br />
+          firstName: "Filip",<br />
+          lastName: "Velichkovski", <br />};<br />let num = 10;<br />
+          console.log("Before", num);<br />
+          // delete num;<br />
+          // console.log("After", num); // Will throw the code<br />
+          // delete still works in strickt mode <br />delete person.lastName;<br />
+          console.log(person);<br />
+          // eva() is evil <br />// eval("let x = 10"); <br />// console.log(x);
+          <br />//Duplicate parametar <br />// function example(a, b, a) {<br />
+          // console.log(a); <br />// <br />} <br />// example(); <br />//
+          Trying to assign a value to an undeclared variable <br />//undecleared
+          = 42; <br />// Can not use undeclared variables in "strict mode"
+        </p>
+      </div>
+      <p>Pure Functions</p>
+      <div class="overflowHidden">
+        <p>
+          function addToTotalPure(value) {//<br />
+          let total = 10;//<br />
+          total += value;//<br />
+          return total;//<br />
+          }//<br />
+          let arr = [1, 2, 3];//<br />
+
+          // Impure function//<br />
+
+          function addToArr(elements) {//<br />
+
+          arr.push(elements);//<br />
+
+          }//<br />
+
+          console.log(arr); //<br />
+          addToArr(4); //<br />
+          console.log(arr); //<br />
+          //<br />
+          // -o-o-o-o-o-o//<br />
+          //<br />
+          // Pure Function //<br />
+          function addtoArr(array, element) {//<br />
+          let newArray = [];//<br />
+          for (const e of array) {//<br />
+          newArray.push(e);//<br />
+          }//<br />
+          array.push(element); //<br />
+          return array; //<br />
+          }
+        </p>
+      </div>
+      <button id="impureFuction">Impure Function Example</button>
+      <p>First Class Citizen Function</p>
+      <div class="overflowHidden">
+        <p>
+          function opperations(func, firstNum, secondNum) {<br />
+          return func(firstNum, secondNum);<br />
+          }<br />
+
+          const greetingGenerator = (language) => {<br />
+          switch (language) {<br />
+          case "english":<br />
+          return (name) => console.log(`Hello ${name}`);<br />
+          case "german":<br />
+          return (name) => console.log(`Hallo ${name}`);<br />
+          case "spanish":<br />
+          return (name) => console.log(`Hola ${name}`);<br />
+          case "unsuported":<br />
+          return (name) => console.log(`language not recognized`);<br />
+          }<br />
+          };<br />
+
+          const greetEN = greetingGenerator("english");<br />
+          const greetGE = greetingGenerator("german");<br />
+          const greetSP = greetingGenerator("spanish");<br />
+          const greetNA = greetingGenerator("unsuported");<br />
+          greetEN("Tommy");<br />
+          greetGE("Hrman");<br />
+          greetSP("Abuelita");<br />
+          greetNA("Chong-Li");<br />
+        </p>
+      </div>
+    </div>
+
+    <script src="code.js"></script>
+  </body>
+</html>
