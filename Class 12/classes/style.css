@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: #39FF14;
+    text-shadow: #70ff56 0px 0px 15px;
+}
+h1{text-align: center;}
